@@ -1,0 +1,30 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Credentials - never commit Google service account keys
+*service-account*.json
+sport-calendar-bot-*.json
+credentials.json
+token.json
+
+# Local databases
+*.db
+
+# Per-user data - only the default template is tracked
+users/*
+!users/default/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

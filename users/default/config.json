@@ -1,0 +1,27 @@
+{
+  "individual_players": {
+    "your_favorite_player": 111
+  },
+  "h2h_players": {
+    "player_1": 222,
+    "player_2": 333
+  },
+  "google_calendar": {
+    "calendar_id": "your-calendar-id@group.calendar.google.com",
+    "service_account_file": "users/default/your-service-account-file.json"
+  },
+  "database": {
+    "path": "users/default/events.db"
+  },
+  "api": {
+    "timeout": 30,
+    "cache_ttl": 3600,
+    "custom_headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "X-Requested-By": "YourUsername_from_snooker.org_admin"
+    }
+  },
+  "timezone": "Europe/Warsaw",
+  "log_level": "INFO",
+  "log_format": "%(asctime)s - %(levelname)s - %(message)s"
+}
