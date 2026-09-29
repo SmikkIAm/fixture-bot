@@ -1,4 +1,4 @@
-# SportCalendarTGBot
+# Fixture Bot
 
 A command-line tool that keeps a Google Calendar in sync with upcoming snooker matches from the
 [snooker.org](https://api.snooker.org) API. You tell it which players to follow; it creates calendar

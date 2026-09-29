@@ -78,7 +78,7 @@ class CLICommands:
                 )
                 return 1
             
-            self.output.print_header("SPORT CALENDAR SYNC")
+            self.output.print_header("FIXTURE BOT SYNC")
             
             self.config.validate()
             h2h_players = self.config.get_filtered_h2h_players()
@@ -105,7 +105,7 @@ class CLICommands:
         try:
             self.config.validate()
 
-            self.output.print_header("SPORT CALENDAR CHECK API")
+            self.output.print_header("FIXTURE BOT CHECK API")
             
             h2h_players = self.config.get_filtered_h2h_players()
             
@@ -129,7 +129,7 @@ class CLICommands:
     
     def check_db(self) -> int:
         try:
-            self.output.print_header("SPORT CALENDAR CHECK DATABASE")
+            self.output.print_header("FIXTURE BOT CHECK DATABASE")
 
             database_service = DatabaseService(self.config.database.path)
             database_service.initialize_database()
@@ -247,7 +247,7 @@ class CLICommands:
     
     def show_help(self) -> int:
         help_text = """
-SportCalendarTGBot - Snooker Calendar Sync Tool
+Fixture Bot - Snooker Calendar Sync Tool
 USAGE:
     python main.py --user [USERNAME] [COMMAND]
     python main.py [COMMAND]
